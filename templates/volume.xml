@@ -2,7 +2,7 @@
   <name>cloud0156004-vol</name>
   <capacity unit="GB">5</capacity>
   <target>
-    <path>/home/cloud0156004/images/vol.img</path>
+    <path>/home/cloud0156004/images/cloud0156004-vol.img</path>
     <format type='raw'/>
     <permissions>
       <mode>0700</mode>

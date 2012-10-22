@@ -1,5 +1,5 @@
 <domain type='kvm'>
-  <name>domain</name>
+  <name>cloud0156004-domain</name>
   <memory unit='MB'>512</memory>
   <vcpu placement='auto'>2</vcpu>
   <os>
@@ -18,7 +18,7 @@
       <target dev='hdc' bus='ide'/>
     </disk>
     <disk type='file' device='disk'>
-      <source file='/home/cloud0156004/images/vol.img'/>
+      <source file='/home/cloud0156004/images/cloud0156004-vol.img'/>
       <target dev='hda' bus='ide'/>
     </disk>
     <input type='mouse' bus='ps2'/>
