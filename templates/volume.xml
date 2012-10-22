@@ -1,0 +1,13 @@
+<volume>
+  <name>cloud0156004-vol</name>
+  <capacity unit="GB">5</capacity>
+  <target>
+    <path>/home/cloud0156004/images/vol.img</path>
+    <format type='raw'/>
+    <permissions>
+      <mode>0700</mode>
+      <owner>10023</owner>
+      <group>2000</group>
+    </permissions>
+  </target>
+</volume>

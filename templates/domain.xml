@@ -1,0 +1,27 @@
+<domain type='kvm'>
+  <name>domain</name>
+  <memory unit='MB'>512</memory>
+  <vcpu placement='auto'>2</vcpu>
+  <os>
+    <type arch='x86_64' machine='pc'>hvm</type>
+    <boot dev='hd'/>
+    <boot dev='cdrom'/>
+  </os>
+  <clock offset='utc'/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>destroy</on_crash>
+  <devices>
+    <emulator>/usr/bin/kvm</emulator>
+    <disk type='file' device='cdrom'>
+      <source file='/home/ISO/Archlinux/archlinux-2012.10.06-dual.iso'/>
+      <target dev='hdc' bus='ide'/>
+    </disk>
+    <disk type='file' device='disk'>
+      <source file='/home/cloud0156004/images/vol.img'/>
+      <target dev='hda' bus='ide'/>
+    </disk>
+    <input type='mouse' bus='ps2'/>
+    <graphics type='vnc' port='-1' listen='127.0.0.1'/>
+  </devices>
+</domain>

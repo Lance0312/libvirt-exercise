@@ -1,0 +1,11 @@
+<pool type="dir">
+  <name>cloud0156004</name>
+  <target>
+    <path>/home/cloud0156004/images</path>
+    <permissions>
+      <mode>0700</mode>
+      <owner>10023</owner>
+      <group>2000</group>
+    </permissions>
+  </target>
+</pool>
