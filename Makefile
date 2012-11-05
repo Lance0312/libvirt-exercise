@@ -1,14 +1,19 @@
 CC = gcc
 SRC_DIR = src
+SRC = $(notdir $(wildcard $(SRC_DIR)/*.c))
 BUILD_DIR = build
-LIBS=-lvirt
+BUILD_TARGET = $(patsubst %.c, $(BUILD_DIR)/%, $(SRC))
+LIBS = -lvirt
 
-all: $(patsubst %.c, %, $(wildcard $(SRC_DIR)/*.c))
 
 $(BUILD_DIR)/%: $(SRC_DIR)/%.c
 	$(cc-command)
 
-build:
+all: $(BUILD_TARGET)
+
+$(BUILD_TARGET): | $(BUILD_DIR)
+
+$(BUILD_DIR):
 	@mkdir $@
 
 .PHONY : clean
