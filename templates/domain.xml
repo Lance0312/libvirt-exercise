@@ -24,5 +24,11 @@
     </disk>
     <input type='mouse' bus='ps2'/>
     <graphics type='vnc' port='-1' listen='127.0.0.1'/>
+    <interface type='bridge'>
+      <source bridge='0156004-br254'/>
+    </interface>
+    <interface type='direct'>
+      <source dev='eth0' mode='bridge'/>
+    </interface>
   </devices>
 </domain>

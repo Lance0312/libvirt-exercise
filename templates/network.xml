@@ -1,0 +1,10 @@
+<network>
+  <name>0156004-br254</name>
+  <bridge name="0156004-br254" />
+  <forward mode="nat"/>
+  <ip address="192.168.254.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="192.168.254.2" end="192.168.254.254" />
+    </dhcp>
+  </ip>
+</network>
