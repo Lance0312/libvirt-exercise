@@ -11,7 +11,7 @@ if len(sys.argv) == 3:
   domain_vol_text = domain_vol.get('file')
   for i in range(int(sys.argv[1]), int(sys.argv[1]) + int(sys.argv[2])):
     domain_name.text = domain_name_text + str(i)
-    domain_vol.set('file', re.sub(domain_name_text, domain_name.text, domain_vol_text))
+    domain_vol.set('file', re.sub('cloud0156004-vol', 'cloud0156004-vol' + str(i) + '.img', domain_vol_text))
     tree.write('../xml/domain%s.xml' % i)
 else:
   print 'Output default xml description'
