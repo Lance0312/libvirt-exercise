@@ -1,6 +1,7 @@
 <domain type='kvm'>
   <name>cloud0156004-domain</name>
-  <memory unit='MB'>512</memory>
+  <memory unit='KiB'>524288</memory>
+  <currentMemory unit='KiB'>524288</currentMemory>
   <vcpu placement='auto'>2</vcpu>
   <os>
     <type arch='x86_64' machine='pc'>hvm</type>
